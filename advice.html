@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .container {
+      background-color: rgba(255, 68, 0, 0.575);
+      color: rgba(0, 0, 0, 0.979);
+      text-align: center;
+      box-sizing: content-box;
+      border: 0px solid black;
+      box-shadow: 2px 2px 2px 1px black;
+      width: 100vh;
+      align-self: center;
+      justify-content: center;
+      margin-left: 50vh;
+      margin-top: 20vh;
+      border-radius: 1%;
+      font-size: 2vh;
+      padding: 2vh 2vh 2vh;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #00000000;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* border-bottom: 2px solid black; */
+      -webkit-backdrop-filter: blur(0px);
+      backdrop-filter: blur(0px);
+      top: 4%;
+      height: fit-content;
+      zoom: 80%;
+      border-bottom: 1px solid #000000;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: rgb(255, 34, 0);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bolder;
+      font-size: large;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(122, 120, 120, 0.265);
+    }
+
+    .boxbtm {
+      background-color: rgba(3, 13, 55, 0);
+      width: 120vh;
+      position: absolute;
+      top: 120vh;
+      left: 18vh;
+      height: 10vh;
+      border: 0px solid rgba(3, 1, 16, 0.044);
+      /* box-shadow: 1px 1px 2px 2px rgb(0, 0, 0); */
+      padding: 5vh;
+      margin: 20vh;
+      align-self: center;
+      font-size: 2vh;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    .btmimg {
+      height: 5vh;
+    }
+
+    ul {
+      float: none;
+      margin: 10 10px 10 10;
+    }
+
+    li {
+      color: orangered
+    }
+
+    .line {
+      display: inline-block;
+      position: relative;
+      color: #ca3d00;
+    }
+
+    .line::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #ca0000;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    .line:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .disabled {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="" class="disabled"></a><a href="" class="disabled"></a>
+    <a href="AdvenTour.php" class="line">HOME</a>
+    <a href="" class="line">NEWS</a>
+    <a href="" class="disabled"></a>
+    <a href="advice.html" class="line">TRAVEL ADVICE</a>
+    <a href="" class="disabled" style="float: right;"></a><a href="" class="disabled" style="float: right;"></a>
+    <a href="../AdvenTour/User/Login/login.html" style="float: right;" class="line">LOGIN</a>
+    <a href="../AdvenTour/User/Login/signup.html" style="float: right;" class="line">SIGN UP</a>
+  </div>
+  <div class="container">
+    <p>
+    <h1 style="color: black;">Coronavirus (COVID-19) Travel Updates</h1>
+    AdvenTour, like all other operators have been dealing with an unprecedented and challenging impact to our services
+    through 2020 and 2021. Whilst borders are reopening and rules are relaxing there is one thing that remains a
+    constant for our customers: We offer a 100% money back, no quibble guarantee should an event such as a pandemic stop
+    us from fulfilling your dreams of exploration.
+
+    Given the unprecedented impact of Coronavirus (COVID-19), we have updated our Terms & Conditions to adapt to the
+    constantly evolving nature of this pandemic. AdvenTour will continually review the guidance from the World Health
+    Organisation and the governments of the countries in which we intend to operate. We are maintaining regular contact
+    with our destination partners, and should extra measures be put in place; we will provide necessary updates.
+
+    For the latest information and updates regarding your travel plans, you should either contact us or check the latest
+    advice at - Gov of India (www.india.gov.in/)
+
+    In fact, irrespective of who you travel with (we hope it's with us!) or where you are heading you should always
+    check out the latest FCO advice. It's not just pandemics. It's earthquakes, unrest or just instability that you
+    should always be up to speed with. AdvenTour will never put you or your group at risk and that means that there may
+    be occasions when we disappoint you, but we promise, it's because we want you to be safe and have an amazing time.
+
+    <h2 style="color: black;">Travel Advice</h2>
+    AdvenTour follows government travel advisories from our key traveller markets when making decisions about operating
+    trips in destinations. As the advice may differ depending on your location, it is important to consult your own
+    local foreign travel advisory when considering if travel to a destination is permitted or appropriate for you.
+
+    The world is open, but there are restrictions to travel post pandemic. Again, always consult the advice of the
+    Indian government at the following link:
+
+    (www.india.gov.in/)
+
+    <h2 style="color: black;">Trip / Date Amendments</h2>
+    It is the aim of AdvenTour to continue providing a safe, reliable, and informative service. As such, any trip you
+    book through AdvenTour which subsequently has to be postponed due to further outbreaks of the COVID-19 virus, or any
+    other Force Majeure Event, your trip will be put on hold until such a time your group decides on an alternative date
+    to rebook the trip.
+
+    Postponement and rebooking of your trip will incur no additional fees.
+
+    In addition, if you have any questions about your trip and trip destination, our friendly team are more than happy
+    to discuss it with you.
+
+    Stay safe, travel well and most of all have fun and leave only footprints.</p>
+  </div>
+  <div class="boxbtm">
+    <p><img class="btmimg" src="../Images/logo813.jpg" alt="">
+    <ul style="list-style-type:none;margin-left:20vh">
+      <li>
+        <h3>General</h3>
+      </li>
+      <li><a href="../Homepage/Pune/pune.php" style="text-decoration:none">Pune</a></li>
+      <li><a href="../Homepage/Mumbai/mumbai.php" style="text-decoration:none">Mumbai</a></li>
+      <li><a href="../Homepage/Delhi/delhi.php" style="text-decoration:none">Delhi</a></li>
+      <li><a href="../Homepage/aboutus.php" style="text-decoration:none">About Us</a></li>
+    </ul>
+    <ul style="list-style-type:none;float:right;margin-top:-20vh;margin-right:50vh">
+      <li>
+        <h3>Community</h3>
+      </li>
+      <li><a href="" style="text-decoration:none">News</a></li>
+      <li><a href="" style="text-decoration:none">Travel Advice</a></li>
+    </ul>
+    <ul style="list-style-type:none;float:right;margin-top:-20vh;margin-right:10vh">
+      <li>
+        <h3>Legal</h3>
+      </li>
+      <li><a href="" style="text-decoration:none">Terms & Conditions</a></li>
+      <li><a href="" style="text-decoration:none">Booking Terms</a></li>
+      <li><a href="" style="text-decoration:none">Privacy Policy</a></li>
+    </ul>
+    </p>
+
+    <hr>
+    <p style="text-align: center;font-size:2vh">
+      2023 Adventour.com All rights reserved.<br />
+      The content and images used on this site are copyright protected and
+      copyrights vests with the respective owners. The usage of the content
+      and images on this website is intended to promote the works and no
+      endorsement of the artist shall be implied. Unauthorized use is
+      prohibited and punishable by law.
+    </p>
+    <hr width="20%">
+    <p style="text-align:center">
+      <a href=""><i class='fab fa-instagram'></i></a>
+      <a href=""><i class='fab fa-linkedin-in'></i></a>
+      <a href=""><i class='fab fa-twitter'></i></a><br>
+      <br>Powered by <a href="../../AdvenTour.html" target="_blank">AdvenTour.in</a>
+    </p>
+
+    <br>
+  </div>
+</body>
+
+</html>
