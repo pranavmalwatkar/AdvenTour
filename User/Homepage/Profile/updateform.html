@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../Login/forgot.css" type="text/css" />
+    <style>  .navbar {
+      overflow: auto;
+      background-color: #fcfcfc00;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 1 auto;
+      width: 100%;
+      top: 0%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: 500;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bolder;
+      font-size: large;
+    }
+    
+    /* .navbar a:hover {
+      background-color: rgba(0, 0, 0, 0.062);
+    } */
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../../Homepage/homepage.php" style="
+            position: relative;
+            overflow: hidden;
+            padding: 0%;
+            height: 55px;
+            width: 200px;
+            background-image: url(../../Images/logo813.jpg);
+            background-size: cover;
+            align-items: center;
+            background-repeat: no-repeat;
+          "></a></div>
+    <form method="POST" action="../../Database/updatedb.php">
+      <h1 style="text-align: center">
+        <u>Update Details</u>
+      </h1>
+      <center>
+        <!-- <div class="form" style="position: absolute; top: 20%; left: 30%"> -->
+          <div class="col-25">
+            <div class="container" style= "position:absolute; left:0%;">
+          <h3>
+            UserName: &nbsp;<input class="form-field" type="text" name="uname" />
+          </h3>
+          <br />
+          <h3>
+            Current Password: &nbsp;<input class="form-field" type="password" name="p1" />
+          </h3>
+          <br />
+          <h3>
+            New Password: &nbsp;<input class="form-field" type="password" name="p2" />
+          </h3>
+          <div>
+            <button class="button" name="n1">Submit</button>
+            <button class="button" formaction="../Profile/profile.php">Cancel</button>
+          </div>
+        </div>
+      </center>
+    </form>
+  </body>
+</html>

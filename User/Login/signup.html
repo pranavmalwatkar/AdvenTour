@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../Login/demo.css" type="text/css" />
+  </head>
+
+  <form method="POST" action="../Database/registerdb.php" id="emailForm">
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h2 class="animation a1">Register here!</h2>
+        </div>
+        <div class="form">
+          <input
+            type="username"
+            class="form-field animation a3"
+            placeholder="Username"
+            name="uname"
+            minlength="2"
+            required
+          />
+          <input
+          type="email"
+          class="form-field animation a4"
+          placeholder="Email"
+          name="email"
+          id="email"
+          pattern="[a-zA-Z0-9._%+-]+@gmail\.com"
+          minlength="12"
+          required
+        />
+          <input
+            type="password"
+            class="form-field animation a5"
+            placeholder="Password"
+            name="pass"
+            minlength="8"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
+            required
+            title="Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character."
+          />
+          <input
+            type="text"
+            class="form-field animation a6"
+            placeholder="What is your College Name?"
+            name="q1"
+            minlength="2"
+            required
+          />
+          <input
+            type="text"
+            class="form-field animation a6"
+            placeholder="What is your Mother's name?"
+            name="q2"
+            minlength="2"
+            required
+          />
+
+          <button class="animation a6" name="register">REGISTER</button>
+          <p class="animation a5">
+            Already have an account? Sign in
+            <a href="../Login/login.html">here</a>
+          </p>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </form>
+  <script src="validation.js"></script>
+</html>

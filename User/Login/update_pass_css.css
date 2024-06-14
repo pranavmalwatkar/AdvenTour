@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@media screen and (max-width: 1366px) and (max-height:768px) {
+  body {
+    zoom: 100%;
+  }
+
+  .form-popup {
+    zoom: 105%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-height:900px) {
+  body {
+    zoom: 100%;
+  }
+}
+  .form-popup {
+    zoom: 105%;
+  }
+  body{
+    background-color: #d8c5c556;
+   }
+/* General form styling */
+form {
+    max-width: 50%;
+    max-height: 50%;
+    background-color: #d8c5c556;
+    zoom: 150%;
+    margin: 0 auto;
+    /* max-height:900px; */
+    padding: 50px 20px 50px 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form field styling */
+.form-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    /* width: 100%; */
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #2f9915 0%, #25a72f 100%);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #1e8105 0%, #0a5526 100%);
+}
+
+/* Animation class for form fields */
+.animation.a5 {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animation.a5:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.cancel {
+    background-color: #ff0000; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 50px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it inline */
+    font-size: 16px; /* Text size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.cancel:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.cancel:active {
+    background-color: #b71c1c; /* Even darker red when pressed */
+    transform: scale(1); /* Reset scale when pressed */
+}
+
+

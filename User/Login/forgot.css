@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@media screen and (max-width: 1366px) and (max-height:768px) {
+  body {
+    zoom: 100%;
+  }
+
+  .form-popup {
+    zoom: 105%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-height:900px) {
+  body {
+    zoom: 100%;
+  }
+}
+  .form-popup {
+    zoom: 105%;
+  }
+  body{
+    background-color: #d8c5c556;
+   }
+/* Container to center form */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d8c5c556;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 0;
+  zoom: 100%;
+}
+
+
+/* General form styling */
+form {
+  width: 100%;
+  margin: 10px;
+}
+
+/* Form field styling */
+.form-field {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.button1 {
+  padding: 10px 20px;
+  margin: 10px 5px 0 0;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #188d31 0%, #199e41 100%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center; 
+  transition: background-color 0.3s ease;
+
+}
+
+.button:hover {
+  background: linear-gradient(to right, #1e8105 0%, #0a5526 100%);
+}
+.button2 {
+  padding: 10px 20px;
+  margin-left: 60px;
+  /* margin: 10px 5px 0 0; */
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #f27941 0%, #ff0000 100%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center; 
+  transition: background-color 0.3s ease;
+}
+.button2[formaction] {
+  background-color: #d32f2f;
+}
+
+.button2[formaction]:hover {
+  background-color: #d32f2f;
+}
+
+/* Centering the form elements */
+.center {
+  text-align: center;
+  margin-top: 20px;
+}
+
