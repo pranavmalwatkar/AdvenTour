@@ -4,8 +4,9 @@
   <title>Title of the document</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../AdvenTour/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-*********" crossorigin="anonymous" />
+
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
@@ -66,10 +67,6 @@
 
       <video src="User/Images/india.mp4" muted loop autoplay type="video/mp4" class="imgclass">
         <audio id="sound" src="User/Images/india.mp4"></audio></video>
-
-      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/35npVaFGHMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-
-
       <a href="User/Login/login.html"><input type=button class="expbtn" value="EXPLORE" formaction=""></a>
 
       <hr>
@@ -77,8 +74,10 @@
         <i class='fab fa-facebook-square'></i>
         <i class='fab fa-instagram'></i>
         <i class='fab fa-linkedin'></i>
-        <p class=>Powered by <a href="" target="_blank">AdvenTour.in</a></p>
+        <p class="footer-text">Powered by <a href="" target="_blank">AdvenTour.in</a></p>
       </footer>
+
+
     </div>
   </form>
 </body>
@@ -91,16 +90,16 @@ if (isset($_POST['enquire'])) {
   $Fname = $_POST['fname'];
   // $Lname = $_POST['lname'];
   $Email = $_POST['email'];
-  $Message = $_POST['message'];
+  $Message = $_POST['UserComments'];
 
 
   //Connect to the MySQL database
-  require_once('./User/Database/functions.php"');
+  require_once ('./User/Database/functions.php"');
 
   $conn = DBConnect();
 
   if (!empty($Fname) && !empty($Email) && !empty($Message)) {
-    $INSERT = "INSERT INTO enquiries(Frist_name,Last_name,Email,Message) VALUES('$Fname','$Lname','$Email','$Message')";
+    $INSERT = "INSERT INTO enquiries(Frist_name,Last_name,Email,UserComments) VALUES('$Fname','$Lname','$Email','$Message')";
     $result = $conn->query($INSERT);
     if ($result) {
       echo "<script> alert('Enquiry Sent Successfully.');
