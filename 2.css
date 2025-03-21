@@ -1,0 +1,84 @@
+body {
+  background-image: url("../Images/img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgba(245, 245, 245, 0.034);
+  backdrop-filter: blur(10px);
+  list-style-type: none;
+}
+
+.container {
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.container div > p span {
+  color: red;
+}
+
+p {
+  position: relative;
+  top: 0px;
+}
+
+p a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 500px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  transition: 0.4s;
+}
+
+.reg {
+  color: green;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.log {
+  color: rgb(0, 0, 0, 1);
+  background-color: rgba(0, 255, 59, 0.7);
+  border: 1px solid rgba(0, 255, 59, 0.7);
+}
+
+button:hover {
+  color: green;
+  width: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 59, 0.7);
+  background-color: rgba(0, 255, 59, 0.7);
+}
+
+p {
+  padding: 30px 0 8px;
+  position: relative;
+}
+
+p::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 8px;
+  width: 150px;
+  height: 10px;
+  transform: skew(-12deg) translateX(-50%);
+  background-color: rgba(0, 255, 23, 1);
+  z-index: -1;
+}
