@@ -3,42 +3,47 @@
     <link rel="stylesheet" href="../Login/demo.css" type="text/css" />
   </head>
 
-  <form method="POST" action="../Database/database.php">
-    <div class="container">
-      <div class="left">
-        <div class="header">
-          <h2 class="animation a1">Welcome Back!</h2>
-          <h4 class="animation a2">
-            Log in to your account using username and password
-          </h4>
+  <body>
+    <!-- Back button in the top-left corner -->
+    <a href="../../index.php" class="back-button">Back to Home</a>
+
+    <form method="POST" action="../Database/database.php">
+      <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Welcome Back!</h2>
+            <h4 class="animation a2">
+              Log in to your account using username and password
+            </h4>
+          </div>
+          <div class="form">
+            <input
+              type="username"
+              class="form-field animation a3"
+              placeholder="Username"
+              name="u"
+              required
+            />
+            <input
+              type="password"
+              class="form-field animation a4"
+              placeholder="Password"
+              name="p"
+              required
+            />
+            <p class="animation a5">
+              <a href="../Login/forgot.html">Forgot Password</a>
+            </p>
+            <button class="animation a6 login-button" name="login">LOGIN</button>
+            <p class="animation a6">
+              Don't have an account? Sign up<a href="../Login/signup.html">
+                here</a
+              >
+            </p>
+          </div>
         </div>
-        <div class="form">
-          <input
-            type="username"
-            class="form-field animation a3"
-            placeholder="Username"
-            name="u"
-            required
-          />
-          <input
-            type="password"
-            class="form-field animation a4"
-            placeholder="Password"
-            name="p"
-            required
-          />
-          <p class="animation a5">
-            <a href="../Login/forgot.html">Forgot Password</a>
-          </p>
-          <button class="animation a6" name="login">LOGIN</button>
-          <p class="animation a6">
-            Don't have an account? Sign up<a href="../Login/signup.html">
-              here</a
-            >
-          </p>
-        </div>
+        <div class="right"></div>
       </div>
-      <div class="right"></div>
-    </div>
-  </form>
+    </form>
+  </body>
 </html>

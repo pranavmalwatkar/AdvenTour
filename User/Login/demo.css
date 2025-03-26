@@ -1,3 +1,41 @@
+/* Style for the back button */
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  /* background-color: #007bff; Same as login-button */
+  background: linear-gradient(to right, #f27941 0%, #ff0000 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000; /* Ensure it stays on top */
+  border: none;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Same hover effect as login-button */
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Same as back-button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Same hover effect as back-button */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Pangolin&family=Rubik+Puddles&family=Ubuntu:wght@600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");

@@ -4,7 +4,8 @@
   <title>Title of the document</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="../AdvenTour/style.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
@@ -18,7 +19,7 @@
     </div>
     <div class="navbar">
       <a href="" class="disabled"></a><a href="" class="disabled"></a>
-      <a href="Adventour.php" class="line">HOME</a>
+      <a href="index.php" class="line">HOME</a>
       <a href="https://timesofindia.indiatimes.com/topic/tourism/news" class="line">NEWS</a>
       <a href="advice.html" class="line">TRAVEL ADVICE</a>
       <a href="" class="disabled" style="float: right;"></a><a href="" class="disabled" style="float: right;"></a>
@@ -104,11 +105,11 @@ if (isset($_POST['enquire'])) {
     $result = $conn->query($INSERT);
     if ($result) {
       echo "<script> alert('Enquiry Sent Successfully.');
-    window.location.href='AdvenTour.php';
+    window.location.href='index.php';
     </script>";
     } else {
       echo "<script> alert('Please enter all the details.');
-            window.location.href='AdvenTour.php';
+            window.location.href='index.php';
             </script>";
     }
   }

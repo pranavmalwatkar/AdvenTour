@@ -165,7 +165,7 @@
         <a href=""><i class='fab fa-instagram'></i></a>
         <a href=""><i class='fab fa-linkedin-in'></i></a>
         <a href=""><i class='fab fa-twitter'></i></a><br>
-        <br>Powered by <a href="../../AdvenTour.php" target="_blank">AdvenTour.in</a>
+        <br>Powered by <a href="../../index.php" target="_blank">AdvenTour.in</a>
       </p>
 
       <br>
