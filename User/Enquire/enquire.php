@@ -79,20 +79,21 @@ if (isset($_POST['enquire'])) {
 
   $conn = DBConnect();
 
-  if (!empty($Fname) && !empty($Lname) && !empty($Email) && !empty($Message)) {
+  if (!empty($Fname) || !empty($Lname) && !empty($Email) && !empty($Message)) {
     $INSERT = "INSERT Into enquiries(First_name,Last_name,Email,UserComments) values(?,?,?,?)";
     $stmt = $conn->prepare($INSERT);
     $stmt->bind_param("ssss", $Fname, $Lname, $Email, $Message);
     $stmt->execute();
 
-    // $INSERT = "INSERT Into enquiries(Frist_name,Last_name,Email,Message) values('$Fname','$Lname','$Email','$Message')";
-    // $result = $conn->query($INSERT);
-
-    echo "<script> alert('Enquiry Sent Successfully.');
-    window.location.href='../Enquire/enquire.php';
-    </script>";
-
-
+    if (isset($_SESSION["mySessionObject"])) {
+        echo "<script> alert('Enquiry Sent Successfully.');
+        window.location.href='../Enquire/enquire.php';
+        </script>";
+    } else {
+        echo "<script> alert('Enquiry Sent Successfully.');
+        window.location.href='../../  index.php';
+        </script>";
+    }
   } else {
     echo "<script> alert('Please enter all the details.');
             window.location.href='../Enquire/enquire.php';

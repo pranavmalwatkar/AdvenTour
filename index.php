@@ -6,11 +6,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="../AdvenTour/index.css">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'>
+
+function clearContactInfo() {
+    // Clear the text inside the <ul> with id "contact-info"
+    document.getElementById('contact-info').innerHTML = '';
+  }
+  </script>
 </head>
 
 <body>
-  <form action="User/Enquire/enquire.php" method="POST">
+  <form action="<?php echo ($_SERVER['PHP_SELF']); ?>" method="POST">
     <div class="Section_top">
       <div class="content">
         <h1>AdvenTour.in <span style="font-size: large;font-weight: bold;">Adventure and Tourism !</span></h1>
@@ -54,10 +60,12 @@
           <li><i class='fas fa-envelope'></i> Email: AdvenTour@gmail.com</li>
         </ul>
         <ul style="list-style-type: none;margin-left: 82vh;margin-top: -15vh;">
-          <li><input type="text" id="" placeholder="Name" name="fname"> <input type="email" id="" placeholder="Email"
-              name=email></li>
+          <li><input type="text" id="" placeholder="Name" name="fname"> <input type=text name="lname" placeholder="Enter Last Name">
+          </li>
 
-          <li><input type="text" style="width: 40%; height: 2%;padding: 2vh;" placeholder="Message" name="message">
+          <li><input type="email" id="" placeholder="Email"
+          name=email>  <input type="text" style="width: 40%; height: 2%;padding: 2vh;" placeholder="Message" name="message"></li>
+          <li><button type="reset" onclick="clearContactInfo()">Reset</button>
             <button type="submit" name="enquire">Enquire</button>
           </li>
         </ul>
@@ -89,7 +97,7 @@
 if (isset($_POST['enquire'])) {
 
   $Fname = $_POST['fname'];
-  // $Lname = $_POST['lname'];
+  $Lname = $_POST['lname'];
   $Email = $_POST['email'];
   $Message = $_POST['message'];
 
@@ -99,8 +107,8 @@ if (isset($_POST['enquire'])) {
 
   $conn = DBConnect();
 
-  if (!empty($Fname) && !empty($Email) && !empty($Message)) {
-    $INSERT = "INSERT INTO enquiries(Frist_name,Last_name,Email,Message) VALUES('$Fname','$Lname','$Email','$Message')";
+  if (!empty($Fname) &&!empty($Lname) && !empty($Email) && !empty($Message)) {
+    $INSERT = "INSERT INTO enquiries(First_name,Last_name,Email,UserComments) VALUES('$Fname','$Lname','$Email','$Message')";
     $result = $conn->query($INSERT);
     if ($result) {
       echo "<script> alert('Enquiry Sent Successfully.');

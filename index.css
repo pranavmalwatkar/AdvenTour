@@ -191,6 +191,15 @@ select {
   box-sizing: border-box;
   background-color: #ffffff97;
 }
+button[type="reset"] {
+  background: linear-gradient(to right, #ed7f4c 0%, #ff0000 100%);
+  width: 20%;
+  padding: 8px;
+  color: #ffffff;
+  border: 0px solid black;
+  border-radius: 2%;
+  cursor: pointer;
+}
 button[type="submit"] {
   background: linear-gradient(to right, #ed7f4c 0%, #ff0000 100%);
   width: 20%;
