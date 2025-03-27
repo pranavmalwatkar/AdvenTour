@@ -66,9 +66,9 @@
       <p class="title">CEO & Founder, Designer</p>
       <p>ICCS</p>
       <div style="margin: 24px 0">
-      <a href="#"><i class='fab fa-twitter'></i></a>
-        <a href="https://www.linkedin.com/in/aaryan-ojha-6ab578270"><i class='fab fa-linkedin-in'></i></a>
-        <a href="#"><i class='fab fa-facebook-f'></i></a>
+        <a href="https://www.youtube.com/channel/UC_aaryan"><i class='fa fa-youtube'></i></a>
+        <a href="https://www.linkedin.com/in/aaryan-ojha-6ab578270"><i class='fa fa-linkedin'></i></a>
+        <a href="path/to/aaryan_resume.pdf"><i class='fa fa-file'></i></a>
       </div>
       <p><button>Contact</button></p>
     </div>
@@ -76,14 +76,13 @@
     <div class="card2">
       <img src="../Images/pranav.jpg" alt="John" style="width: 100%" />
       <h2>Pranav Malwatkar</h2>
-      <p class="title">CEO & Founder, Designer</p>
-      <p>ICCS</p>
+      <p class="title">FULL STACK DEVELOPER</p>
       <div style="margin: 24px 0">
-        <a href="#"><i class='fab fa-twitter'></i></a>
-        <a href="https://www.linkedin.com/in/pranav-malwatkar-9834b1239"><i class='fab fa-linkedin-in'></i></a>
-        <a href="#"><i class='fab fa-facebook-f'></i></a>
+        <a href="https://www.youtube.com/@SkillUpWithPranav"><i class='fa fa-youtube'></i></a>
+        <a href="https://www.linkedin.com/in/pranav-malwatkar-9834b1239/"><i class='fa fa-linkedin'></i></a>
+        <a href="https://drive.google.com/file/d/1wqjC8OoMltvBWxArrWwpcyidkqdREKhm/view?usp=sharing"><i class='fa fa-file'></i></a>
       </div>
-      <p><button>Contact</button></p>
+      <p><button>Contact</button></p> 
     </div>
 
     <div style="text-align: center">AdvenTour ko banaya hai</div>

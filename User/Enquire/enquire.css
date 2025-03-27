@@ -1,36 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-@media screen and (max-width: 1366px) and (max-height:768px) {
-  body {
-    zoom: 100%;
-  }
 
-  .form-popup {
-    zoom: 105%;
-  }
-}
-
-@media screen and (max-width: 1440px) and (max-height:900px) {
+@media screen and (max-width: 1366px) and (max-height: 768px) {
   body {
     zoom: 100%;
   }
 }
-  .form-popup {
-    zoom: 105%;
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  body {
+    zoom: 100%;
   }
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   background: linear-gradient(to right, #d8c5c556 20%, #b1d1fc 80%);
   left: 0vh;
   top: -1.25vh;
-  left: -1.25vh;
-  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+  z-index: -1;
   background-attachment: scroll;
 }
 
-.stretch {
-  width: 100%;
-  height: 50%;
-}
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -54,6 +44,7 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
@@ -69,7 +60,6 @@ body {
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
-  font-family: "Quicksand", sans-serif;
 }
 
 .dropdown {
@@ -85,7 +75,6 @@ body {
   color: rgb(0, 0, 0);
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
   margin: 0;
 }
 
@@ -126,72 +115,25 @@ body {
   opacity: 0.3;
 }
 
-.enquiry {
-  background-color: rgb(255, 255, 255);
-  width: 80vh;
-  height: 60vh;
-  border: 0px solid rgba(0, 0, 0, 0.909);
-  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.262);
-  padding: 18vh;
-  margin-top: 24vh;
-  margin-left: 65vh;
-  background-color: #ffffff97;
-  backdrop-filter: blur(200px);
-  zoom: 80%;
-  text-align: center;
-  justify-self: center;
-}
-input[type="text"],
-select {
-  width: 100%;
-  padding: 2vh 2vh;
-  margin: 2vh 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #ffffff97;
-}
-input[type="email"],
-select {
-  width: 100%;
-  padding: 2vh 2vh;
-  margin: 2vh 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #ffffff97;
-}
-.txta {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 4px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #ffffff97;
-}
 
-.btnenq {
-  padding: 12px 10px 10px 10px;
-  width: 100%;
-  border: 0;
-  background: linear-gradient(to right, #ff6d12 0%, #ff3131 100%);
-  border-radius: 3px;
-  margin-top: 10px;
-  color: #fff;
-  letter-spacing: 1px;
-  font-family: "Rubik", sans-serif;
-}
-.btnenq:hover {
-  background: linear-gradient(to right, #ff6d12 0%, #ff3131b1 100%);
-
-  cursor: pointer;
-}
 
 .content {
-  justify-content: center;
-  margin-top: -22vh;
+  margin: 0 auto;
+  width: 90%;
+  height: 90vh;
+  text-align: center;
+  background-color: #ffffff97;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+h3 {
+  color: #ff6d12;
+  font-size: 6vh;
 }

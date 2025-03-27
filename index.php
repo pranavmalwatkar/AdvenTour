@@ -53,25 +53,10 @@ function clearContactInfo() {
       </p>
       <p class="escapes__title">Contact Us</p>
       <span style="font-size: 2vh;font-style: italic;">Want to Know more? Send us an Enquiry!</span><br><br>
-      <span style="font-size:medium; font-weight: 700;">
-        <ul style="list-style-type: none;margin-right: 82vh;">
-          <li><i class='fas fa-map-pin'></i> Pune, Maharashtra</li>
-          <li><i class='fas fa-phone-alt'></i> Phone:+91 9876543210</li>
-          <li><i class='fas fa-envelope'></i> Email: AdvenTour@gmail.com</li>
-        </ul>
-        <ul style="list-style-type: none;margin-left: 82vh;margin-top: -15vh;">
-          <li><input type="text" id="" placeholder="Name" name="fname"> <input type=text name="lname" placeholder="Enter Last Name">
-          </li>
-
-          <li><input type="email" id="" placeholder="Email"
-          name=email>  <input type="text" style="width: 40%; height: 2%;padding: 2vh;" placeholder="Message" name="message"></li>
-          <li><button type="reset" onclick="clearContactInfo()">Reset</button>
-            <button type="submit" name="enquire">Enquire</button>
-          </li>
-        </ul>
-      </span>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdId5cUY9TLLCZfoQoDlq6ZLeamGYGy_Cc1m-HfnwMQL_wciw/viewform?usp=header" 
+              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" style="border: none;">
+      </iframe>
       <hr>
-
       <video src="User/Images/india.mp4" muted loop autoplay type="video/mp4" class="imgclass"></video>
 
 

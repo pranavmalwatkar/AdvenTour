@@ -16,9 +16,6 @@
   <form>
     <div class="navbar">
       <!-- Invisible buttons-disabled hover -->
-      <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="disabled"></a>
-    <a href="http://" target="_blank" rel="noopener noreferrer" class="disabled"></a> -->
-
       <a href="../Homepage/homepage.php" style="
             position: relative;
             overflow: hidden;
@@ -40,7 +37,6 @@
 
         </button>
         <div class="dropdown-content">
-          <!-- <a href="../../Homepage/Profile/profile.php">Profile</a> -->
           <a href="./Profile/profile.php">Profile</a>
           <a href="../Login/login.html">Sign Out</a>
         </div>
@@ -67,7 +63,6 @@
     <div class="tourpackage">
       <span class="tour_title">Tour Packages</span>
     </div>
-    <!-- <span class="tour__caption">Discover your ideal Experience</span> -->
     <div class="packbox">
       <span class="package1"><img src="../Images/agakhan.jpg" alt=""
           style="height:20vh;width:45vh;float:left; padding:2vh 2vh">
