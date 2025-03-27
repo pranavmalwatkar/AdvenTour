@@ -41,9 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate the input
     if (empty($new_password) || empty($confirm_password)) {
-        echo "Please fill in all fields.";
+        echo "<script>
+        alert('Please fill in all fields.');
+        </script>";
     } elseif ($new_password !== $confirm_password) {
-        echo "Passwords do not match.";
+        echo "<script>
+        alert('Passwords do not match.');
+        window.location.href='update_password.php';
+        </script>";
     } else {
         // Hash the new password
         $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
@@ -52,13 +57,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "UPDATE users SET password = ? WHERE id = ?";
         if ($stmt = $conn->prepare($sql)) {
             $stmt->bind_param("si", $hashed_password, $user_id);
-            if ($stmt->execute()) {
-                echo "Password updated successfully.";
+            if ($stmt->execute()) { 
                 echo "<script>
         alert('Password updated successfully.');
-        window.location.href='login.html';        </script>";
+        window.location.href='login.html';
+        </script>";
             } else {
-                echo "Error updating password: " . $conn->error;
+                echo "<script>
+        alert('Error updating password: " . $conn->error . "');
+        window.location.href='';
+        </script>";
             }
             $stmt->close();
         } else {

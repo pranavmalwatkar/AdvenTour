@@ -4,14 +4,13 @@
   <title>Title of the document</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="../AdvenTour/style.css">
+  <link rel="stylesheet" href="../AdvenTour/index.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
 <body>
-  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+  <form action="User/Enquire/enquire.php" method="POST">
     <div class="Section_top">
       <div class="content">
         <h1>AdvenTour.in <span style="font-size: large;font-weight: bold;">Adventure and Tourism !</span></h1>
@@ -47,12 +46,12 @@
         <hr>
       </p>
       <p class="escapes__title">Contact Us</p>
-      <span style="font-size: 2vh;font-style: italic;">Want to Know more? Send us an Enquiry!</span>
+      <span style="font-size: 2vh;font-style: italic;">Want to Know more? Send us an Enquiry!</span><br><br>
       <span style="font-size:medium; font-weight: 700;">
         <ul style="list-style-type: none;margin-right: 82vh;">
           <li><i class='fas fa-map-pin'></i> Pune, Maharashtra</li>
           <li><i class='fas fa-phone-alt'></i> Phone:+91 9876543210</li>
-          <li><i class='fas fa-envelope'></i> Email: adventour@mail.com</li>
+          <li><i class='fas fa-envelope'></i> Email: AdvenTour@gmail.com</li>
         </ul>
         <ul style="list-style-type: none;margin-left: 82vh;margin-top: -15vh;">
           <li><input type="text" id="" placeholder="Name" name="fname"> <input type="email" id="" placeholder="Email"
@@ -65,14 +64,14 @@
       </span>
       <hr>
 
-      <video src="User/Images/india.mp4" muted loop autoplay type="video/mp4" class="imgclass">
-        <audio id="sound" src="User/Images/india.mp4"></audio></video>
+      <video src="User/Images/india.mp4" muted loop autoplay type="video/mp4" class="imgclass"></video>
+
 
       <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/35npVaFGHMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 
       <a href="User/Login/login.html"><input type=button class="expbtn" value="EXPLORE" formaction=""></a>
-
+      <!-- <br> <audio id="sound" src="User/Images/india.mp4" controls autoplay></audio> -->
       <hr>
       <footer style="font-size: medium;">
         <i class='fab fa-facebook-square'></i>

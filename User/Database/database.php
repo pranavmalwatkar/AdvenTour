@@ -31,15 +31,14 @@ if (isset($_POST["login"])) {
             $sessionObject = new stdClass();
             $sessionObject->name = $UserName;
             $sessionObject->email = $row["Email"];
-            $sessionObject->isAdmin = $isAdmin;
+            $sessionObject->isAdmin = $IsAdmin; // Corrected variable case
             $sessionObject->pwd = $loginPwd;
 
             // Save the session object
             $_SESSION["mySessionObject"] = $sessionObject;
 
-            $verify = password_verify($loginPwd, $hashedPassword);
-            //  Verify the entered password against the hashed password
-            if ($verify) {
+            // Verify the entered password against the hashed password
+            if (password_verify($loginPwd, $hashedPassword)) { // Ensure password_verify is used correctly
                 // Redirect based on the user's role
                 if ($IsAdmin) {
                     header("Location: ../../Admin/admin.html"); // Redirect to admin page

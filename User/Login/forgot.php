@@ -26,7 +26,7 @@ if (isset($_POST['n1'])) {
         $stmt->fetch();
         session_start();
         $_SESSION['id'] = $id;
-        session_abort();
+        session_write_close(); // Save session data and close the session
         if ($result_username == $uname && $result_question1 == $question1 && $result_question2 == $question2) {
             // User input matches with the bound variables
             // Perform some action here

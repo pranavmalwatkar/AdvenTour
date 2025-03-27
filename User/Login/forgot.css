@@ -18,18 +18,23 @@
     zoom: 105%;
   }
   body{
-    background-color: #d8c5c556;
+    background-color:#e28d87; /* Changed background color */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    margin: 0; /* Remove default margin */
    }
 /* Container to center form */
 .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center the div */
   justify-content: center;
-  max-width: 450px;
+  max-width: 550px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #d8c5c556;
+  padding: 20px 20px 20px 20px;
+  background-color:#e5d4ad ; /* Match body background color */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
