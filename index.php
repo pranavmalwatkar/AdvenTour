@@ -33,7 +33,8 @@ function clearContactInfo() {
     </div>
     <div class="parent">
     </div>
-    <div class="text"><span class="escapes__title">AdvenTour</span>
+    <div class="text responsive-container">
+      <span class="escapes__title">AdvenTour</span>
       <p style="font-size:medium;">AdvenTour is a Travel and Tourism website created for users throughout the world to
         have an easy and friendly environment and interface.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -45,10 +46,10 @@ function clearContactInfo() {
       <hr>
       <div class="escapes__title">Explore</div>
       <p>
-        <img src="../AdvenTour/User/Images/delhi2.jpg" alt="" class="img">
-        <img src="../AdvenTour/User/Images/mumbai1.jpg" alt="" class="img">
-        <img src="../AdvenTour/User/Images/delhi12.jpg" alt="" class="img">
-        <img src="../AdvenTour/User/Images/pune5.jpg" alt="" class="img">
+        <img src="../AdvenTour/User/Images/delhi2.jpg" alt="" class="img responsive-img">
+        <img src="../AdvenTour/User/Images/mumbai1.jpg" alt="" class="img responsive-img">
+        <img src="../AdvenTour/User/Images/delhi12.jpg" alt="" class="img responsive-img">
+        <img src="../AdvenTour/User/Images/pune5.jpg" alt="" class="img responsive-img">
         <hr>
       </p>
       <p class="escapes__title">Contact Us</p>
@@ -57,13 +58,13 @@ function clearContactInfo() {
               width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" style="border: none;">
       </iframe>
       <hr>
-      <video src="User/Images/india.mp4" muted loop autoplay type="video/mp4" class="imgclass"></video>
-
-
+      <div style="position: relative; width: 100%; max-width: 800px; margin: 0 auto;">
+        <video src="User/Images/india.mp4" muted loop autoplay type="video/mp4" class="imgclass responsive-video" style="width:100%; display:block;"></video>
+        <a href="User/Login/login.html" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:2;">
+          <input type="button" class="expbtn" value="EXPLORE" formaction="">
+        </a>
+      </div>
       <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/35npVaFGHMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-
-
-      <a href="User/Login/login.html"><input type=button class="expbtn" value="EXPLORE" formaction=""></a>
       <!-- <br> <audio id="sound" src="User/Images/india.mp4" controls autoplay></audio> -->
       <hr>
       <footer style="font-size: medium;">
